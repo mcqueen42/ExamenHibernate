@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration PUBLIC
-    "-//Hibernate/Hibernate Configuration DTD//EN"
-    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
   <session-factory>
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/fp_academia_m21_a</property>
     <property name="hibernate.connection.username">root</property>
-    <property name="hibernate.connection.password">ChuckNorris2025</property>
+    <property name="hibernate.connection.password">1234</property>
 
     <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
 
@@ -16,5 +16,7 @@
     <property name="hibernate.show_sql">true</property>
     <mapping class="models.Alumno"/>
     <mapping class="models.Curso"/>
+    <mapping class="models.AlumnoCurso"/>
+    <mapping class="models.AlumnoCursoId"/>
   </session-factory>
 </hibernate-configuration>
